@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>Template</title>
+    
+</head>
+<body>
+    <h1 dir="rtl">خلاصه اخبار</h1>
+    <table style="width:100%" border="2" dir="rtl">
+        {% for item in kh%}
+            <tr style="background-color: blueviolet;">
+                <td style="height: 30px;"><h2>{{ item.onvan }}</h2> </td>
+            </tr>
+            <tr>
+                <td>{{ item.matn }}</td>
+            </tr>
+        {%endfor%}
+    </table>
+</body>
+</html>
